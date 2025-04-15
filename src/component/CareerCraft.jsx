@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import AboutUs from "./AboutUs";
 
 const websites = [
   {
-    name: "AIcruit",
+    name: "AI-cruit",
     title: "Interview Prep",
     description:
       "Ace interviews with real-time AI-driven simulations and actionable feedback.",
@@ -12,7 +13,7 @@ const websites = [
     icon: "🧠",
   },
   {
-    name: "AIres",
+    name: "AI-res",
     title: "Resume Generator",
     description:
       "Design tailored, professional resumes that stand out from the crowd effortlessly.",
@@ -115,6 +116,8 @@ const CareerCraft = () => {
           ))}
         </div>
       </main>
+
+      <AboutUs/>
 
       <motion.footer
         initial={{ opacity: 0, y: 30 }}
