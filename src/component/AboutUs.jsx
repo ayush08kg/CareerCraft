@@ -16,7 +16,7 @@ const team = [
   {
     name: "Aayush Sharma",
     img: "/aayush.jpg",
-    desc: "Back-end problem solver specializing in API integrations and logic flow. Committed to robust functionality.",
+    desc: "Full stack developer with a knack for building sleek and functional projects. Created PortfolioHub — a no-code portfolio builder that lets users craft personalized portfolio websites in minutes.",
     bg: "bg-slate-800",
   },
 ];

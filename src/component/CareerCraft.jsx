@@ -22,8 +22,8 @@ const websites = [
     icon: "📄",
   },
   {
-    name: "Portfoliobuilder",
-    title: "Portfolio Web",
+    name: "PortfolioHub",
+    title: "Portfolio Builder",
     description:
       "Showcase your achievements with modern, responsive digital portfolios.",
     color: "bg-gradient-to-br from-gray-900 to-black text-white",
