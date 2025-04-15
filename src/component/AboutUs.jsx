@@ -9,8 +9,8 @@ const team = [
   },
   {
     name: "Aashi Tripathi",
-    img: "/aashi.jpg",
-    desc: "User-centric designer with an eye for simplicity and elegance. Turning ideas into seamless experiences.",
+    img: "/aashi.png",
+    desc: "Full Stack Developer, driven by a love for building seamless, user-friendly digital experiences. Created AIResume to turn resume building into an intelligent, interactive experience — blending clean design with AI-powered personalization for real-world impact.",
     bg: "bg-purple-800",
   },
   {
