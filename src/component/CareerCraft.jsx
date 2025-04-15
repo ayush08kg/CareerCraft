@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const websites = [
   {
     name: "AIcruit",
-    title: "AI Mock Interview",
+    title: "Interview Prep",
     description:
       "Ace interviews with real-time AI-driven simulations and actionable feedback.",
     color: "bg-gradient-to-br from-blue-800 to-blue-900 text-white",
@@ -13,7 +13,7 @@ const websites = [
   },
   {
     name: "AIres",
-    title: "AI Resume Builder",
+    title: "Resume Generator",
     description:
       "Design tailored, professional resumes that stand out from the crowd effortlessly.",
     color: "bg-gradient-to-br from-gray-200 to-white text-black",
@@ -22,7 +22,7 @@ const websites = [
   },
   {
     name: "Portfoliobuilder",
-    title: "Portfolio Builder",
+    title: "Portfolio Web",
     description:
       "Showcase your achievements with modern, responsive digital portfolios.",
     color: "bg-gradient-to-br from-gray-900 to-black text-white",
