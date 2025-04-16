@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const team = [
   {
@@ -24,20 +25,28 @@ const team = [
 const AboutUs = () => {
   return (
     <div className="py-2 px-6 text-white">
-      <h2 className="text-3xl font-bold text-center mb-12 ">About Us</h2>
+      <h2 className="text-3xl font-bold text-center mb-12">About Us</h2>
       <div className="grid gap-10 md:grid-cols-3 max-w-6xl mx-auto">
         {team.map((member) => (
           <div
             key={member.name}
             className={`relative text-center rounded-xl px-6 pt-16 pb-6 ${member.bg} shadow-lg`}
           >
-            <div className="absolute top-[-40px] left-1/2 transform -translate-x-1/2">
+            <motion.div
+              className="absolute top-[-40px] left-1/2"
+              initial={{ x: "-150%" }} // Start from far left
+              animate={{ x: ["-150%", "150%", "-50%"] }} // Move right, then back to center
+              transition={{
+                duration: 1.8, // Smooth and fast
+                ease: "easeInOut",
+              }}
+            >
               <img
                 src={member.img}
                 alt={member.name}
                 className="w-24 h-24 object-cover rounded-full border-4 border-white shadow-md"
               />
-            </div>
+            </motion.div>
             <h3 className="text-xl font-semibold mt-2">{member.name}</h3>
             <p className="text-sm text-gray-200 mt-2">{member.desc}</p>
           </div>
