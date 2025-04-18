@@ -30,7 +30,7 @@ const AboutUs = () => {
         {team.map((member) => (
           <div
             key={member.name}
-            className={`relative text-center rounded-xl px-6 pt-16 pb-6 ${member.bg} shadow-lg`}
+            className={`relative text-center rounded-xl px-6 pt-16 pb-6 ${member.bg} shadow-lg hover:scale-110 transition-all cursor-pointer`}
           >
             <motion.div
               className="absolute top-[-40px] left-1/2"
