@@ -40,25 +40,33 @@ const CareerCraft = () => {
       transition={{ duration: 1 }}
       className="min-h-screen bg-gradient-to-b from-black via-blue-950 to-white text-white flex flex-col font-sans"
     >
-      <header className="p-6 bg-black shadow-lg border-b border-blue-800 rounded-b-4xl flex justify-center relative">
-        <motion.h1
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
-        >
-          CareerCraft
-        </motion.h1>
-
-        <motion.p
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="text-sm text-gray-400 italic"
-        >
-          {/* Fueling professional growth with smart tools */}
-        </motion.p>
-      </header>
+      <header className="py-6 px-6 md:px-10 bg-black/90 border-b border-blue-900/90 rounded-b-4xl">
+  <motion.div 
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+    className="max-w-7xl mx-auto flex items-center justify-center"
+  >
+    <div className="flex items-center space-x-4 hover:scale-105 transition-transform duration-300">
+      {/* Logo with subtle glow */}
+      <div className="p-1 rounded-lg bg-gradient-to-br from-blue-600/30 to-purple-600/30">
+        <div className="bg-black p-2 rounded-md">
+          <img 
+            src="/logo1.png" 
+            alt="CareerCraft Logo" 
+            className="w-12 h-12 object-contain"
+          />
+        </div>
+      </div>
+      
+      {/* Brand name with animated gradient */}
+      <h1 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent 
+          bg-gradient-to-r from-blue-400 via-purple-400 to-pink-500">
+        CareerCraft
+      </h1>
+    </div>
+  </motion.div>
+</header>
 
       <main className="flex-grow p-10">
         <motion.div
@@ -117,7 +125,7 @@ const CareerCraft = () => {
         </div>
       </main>
 
-      <AboutUs/>
+      <AboutUs />
 
       <motion.footer
         initial={{ opacity: 0, y: 30 }}
